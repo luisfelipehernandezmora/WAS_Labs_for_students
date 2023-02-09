@@ -8,18 +8,16 @@ Try to get the flag! (it will in 'flag{YOUR FLAG GOES HERE}')
 ### Deployment
 
 ```sh
-git clone https://github.com/aswinmguptha/mwade-challenges/
-cd mwade-challenges/ez-local-files/src
-docker build . -t ez-local-files
-docker run -dp 80:80 ez-local-files
+git clone https://github.com/luisfelipehernandezmora/WAS_Labs_for_students.git
+cd mwade-challenges/ez-local-files
+sudo docker build . -t ez-local-files
+sudo docker run -dp 80:80 ez-local-files
 ```
 Visit [http://localhost](http://localhost)
 
 If you have alrady something running in port 80, 
 
-you can change the command 
-
-docker run -dp 80:80 ez-local-files
+you can change the command : docker run -dp 80:80 ez-local-files
 
 you can try another port like 5000 or 5050 (or anyone!)
 
@@ -38,28 +36,3 @@ or
 http://localhost:5050
 or
 http://localhost:(your port here)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Solution
-Read /etc/passwd by going to
-http://localhost/index.php?page=../../../etc/passwd
