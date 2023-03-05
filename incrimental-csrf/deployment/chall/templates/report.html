@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>REPORT</title>
+    <style>
+        .sideBySide{
+            display: inline-block;
+            color: #000000;
+            border: #4FBDBA solid 3px;
+            background-color: #125f64;
+            padding: 2% 2%;
+            margin-left: 20%;
+            border-radius: 4%;
+        }
+        .view_post{
+            border: #4FBDBA solid 3px;
+            background-color: #125f64;
+            color: #072227;
+            padding: 2% 2%;
+            width: 35%;
+            margin-top: 5%;
+        }
+        .out_view_post{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body{
+            background-color: #072227;
+            color: #ffffff;
+            font-family: Monospace;
+        }
+        input{
+            position: relative;
+            border: 2px solid #4FBDBA;
+            outline: none;
+            background-color: #AEFEFF;
+            border-radius: 10px;
+            font-size: 1.2em;
+        }
+        textarea{
+            border: 1px solid #4FBDBA;
+            background-color: #AEFEFF;
+        }
+        .buttonclick{
+            position: relative;
+            border: 2px solid #4FBDBA;
+            outline: none;
+            background-color: #AEFEFF;
+            border-radius: 10px;
+            font-size: 1.2em;
+        }
+        .buttonclick:hover{
+            border: 4px solid #4FBDBA;
+        }
+        a:link {
+            color: #AEFEFF;
+        }
+        a:visited {
+            color: #4FBDBA;
+        }
+    </style>
+</head>
+<body>
+    <h1>REPORT</h1>
+    <form name="report" action="/report" method="GET">
+        <label for="id">POST ID</label>
+        <input id="id" type="text" name="id"><br><br>
+        <input  class="buttonclick" id="submit" type="submit" name="report" value="Report">
+        <p>{{ report_message }}</p>
+    </form>
+</body>
+</html>
