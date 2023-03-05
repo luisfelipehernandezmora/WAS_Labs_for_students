@@ -11,7 +11,7 @@
 
 ## Flag
 
-``inctf{00ps!_1_th1nk_1_click3d_0n_th3_wr0nG_l1nK}``
+This time we hide the flag, please submit to the Faculty ;)
 
 ## Launch Challenge
 
