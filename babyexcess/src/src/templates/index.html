@@ -1,0 +1,47 @@
+<!-- 
+    Glad that you are here! 
+    But please don't waste time looking in here.
+    /source might help.
+    
+    ;) 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Baby Notes</title>
+    <link rel="stylesheet" href="/static/login.css" />
+
+</head>
+
+<body translate="no">
+    <div class="container">
+        <form action="/" method="post" class="form-login">
+            <div>
+                <div class="input">
+                    <h1>Notes App</h1>
+                </div>
+                <div class="input">
+                    <input type="text" name="username" placeholder="Username" autocomplete="off">
+                </div>
+                <div class="input">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="login-button">
+                <button class="button" type="submit"><b>Log In</b></button>
+            </div>
+            <div class="forget-account">
+            </div>
+            <div class="hr"></div>
+            <div class="create-account">
+                {{ message }}
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

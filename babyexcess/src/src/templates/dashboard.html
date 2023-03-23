@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Notes</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="js/notes.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="toolbar">
+      <h1>Notes App</h1><br/>
+      <a class="toolbar-button" href="/logout">Logout</a>
+      <label class="toolbar-search">Welcome, {{ username }}</label>
+    </div>
+    <div class="note-container">
+      <div class="note-selectors">
+        {% for note in notes %}
+        <div class="note-selector">
+          <p><b>{{ note.notetitle }}</b></p>
+          <p><a target="_blank" href="/note/{{ note.noteid }}">View </a></p>
+          <p><a target="_blank" href="/report/{{ note.noteid }}">Report</a></p>
+        </div>
+        {% endfor %}
+
+      </div>
+      <div class="note-editor">
+        <form action="/dashboard" method="POST">
+          <input type="text" name="notetitle" autocomplete="off" class="note-editor-title" placeholder="Enter a title.." />
+          <textarea class="note-editor-input" placeholder="Enter your note here. We also support HTML tags." name="note"></textarea>
+          <input type="submit" class="btn-green" value="Create Note">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
