@@ -6,6 +6,8 @@ RUN apt-get install nodejs -yqq
 RUN apt install unzip -yqq
 RUN apt install python3 python3-pip python3-dev -yqq
 RUN pip3 install requests flask flask_sqlalchemy gunicorn
+RUN apt-get update -yqq
+RUN chmod +x ./src/gunicorn.sh
 
 # install chrome
 ENV TZ=Asia/Kolkata \
