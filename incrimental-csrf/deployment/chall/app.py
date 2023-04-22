@@ -95,7 +95,7 @@ def makepost():
         try:
             title = request.form.get("title").strip()
             content = request.form.get("body")
-            if(len(content)>350):
+            if(len(content)>700):
                 return "Content too long"
             conn = sqlite3.connect(os.path.join(curr_dir,"csrfdb.db"))
             id = uuid.uuid4().hex

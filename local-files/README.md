@@ -2,7 +2,7 @@ Description: ha! you got me last time, now i dare you to try to hack me again ha
 
 Try to get the etc/passwd file!
 
-Try to get the flag! (it will in 'flag{YOUR FLAG GOES HERE}')
+Try to get the flag! (it will be in 'flag{YOUR FLAG GOES HERE}')
 
 
 ### Deployment

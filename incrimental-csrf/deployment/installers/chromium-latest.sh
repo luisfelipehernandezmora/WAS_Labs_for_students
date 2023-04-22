@@ -20,13 +20,13 @@ ZIP_FILE="${REVISION}-chrome-linux.zip"
 echo "fetching $ZIP_URL"
 
 rm -rf $REVISION
-mkdir $REVISION
-pushd $REVISION
+#mkdir $REVISION
+#pushd $REVISION
 curl -# $ZIP_URL > $ZIP_FILE
 echo "unzipping.."
 unzip $ZIP_FILE
-popd
-rm -f ./latest
-ln -s $REVISION/chrome-linux/ ./latest
+#popd
+#rm -f ./latest
+#ln -s $REVISION/chrome-linux/ ./latest
 
 # source: https://github.com/scheib/chromium-latest-linux
